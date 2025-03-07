@@ -1,6 +1,6 @@
-function hamburg() {
-    const navbar = document.querySelector(".dropdown");
-    navbar.style.transform = (navbar.style.transform === "translateY(0px)") ? "translateY(-500px)" : "translateY(0px)";
+function hamburg(){
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(0px)"
 }
 
 function cancel(){
