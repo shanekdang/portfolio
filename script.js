@@ -38,3 +38,11 @@ function eraseText(){
         textElements.innerHTML = textElements.innerHTML.slice(0,-1);
         setTimeout(eraseText, 50)
     }
+    else{
+        textIndex = (textIndex + 1) % texts.length;
+        charcterIndex = 0;
+        setTimeout(typeWriter, 500)
+    }
+}
+
+window.onload = typeWriter
