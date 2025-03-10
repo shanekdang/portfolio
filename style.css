@@ -364,3 +364,12 @@
     margin-bottom: 15px;
     line-height: 1.6;
 }
+
+.about-photo {
+    width: 200px;
+    height: auto; /* Adjust height based on aspect ratio */
+    border-radius: 50%; /* You can remove this if you don't want a circular image */
+    box-shadow: none; /* Remove the box-shadow */
+    margin-bottom: 20px;
+}
+
