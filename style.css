@@ -176,31 +176,44 @@
     box-shadow: 0 0 10px #4acfee;
   }
 
+.hero-img {
+  width: 20vw; /* Adjusts width relative to viewport width */
+  height: 20vw; /* Adjusts height relative to viewport width */
+  background-color: none;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px #4eddfd;
+  transition: 0.5s;
+}
+
+.hero-img:hover {
+  box-shadow: 0 0 25px #4acfee;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
   .hero-img {
-    width: 400px;
-    height: 400px;
-    background-color: none;
-    position: relative;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Added to center the image */
-    overflow: hidden;
-    box-shadow: 0 0 10px #4eddfd;
-    transition: 0.5s;
+    width: 30vw; /* Adjusts width for smaller screens */
+    height: 30vw; /* Adjusts height for smaller screens */
   }
+}
 
-  .hero-img:hover {
-    box-shadow: 0 0 25px #4acfee;
+@media (max-width: 480px) {
+  .hero-img {
+    width: 40vw; /* Adjusts width for very small screens */
+    height: 40vw; /* Adjusts height for very small screens */
   }
+}
 
-  .hero-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the container */
-  }
-
-  
   .info-sec{
     display: flex;
     width: 100%;
