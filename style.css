@@ -225,7 +225,11 @@
     padding: 0 10%;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    justify-content: center; /* If you also want to center it horizontally */
+    text-align: center;
   }
   
   .info-card{
