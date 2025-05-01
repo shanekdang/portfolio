@@ -370,3 +370,84 @@ nav a:hover ,
     box-shadow: none; /* Remove the box-shadow */
     margin-bottom: 20px;
 }
+
+/* Contact Me CSS */
+.contact-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #4acfee;
+    background-color: #24292e;
+    color: white;
+}
+
+button.btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4acfee;
+    color: #0e1217;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.btn:hover {
+    background-color: transparent;
+    color: #4acfee;
+    border: 2px solid #4acfee;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    color: #4acfee;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
