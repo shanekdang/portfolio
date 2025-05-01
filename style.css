@@ -238,6 +238,8 @@
     width: 100%;
     align-items: center;
     max-width: fit-content;
+    justify-content: center;
+    text-align: center;
   }
   
   .info-sec h1{
@@ -265,7 +267,7 @@
     }
   
     .info-sec{
-      margin-top: 30px;
+      margin-top: 10px;
     }
   }
   
