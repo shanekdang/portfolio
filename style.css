@@ -68,8 +68,9 @@
     list-style: none;
     display: flex;
     align-items: center;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100%;
     justify-content: center; /* If you also want to center it horizontally */
+    text-align: center;
   }
   
   nav a{
