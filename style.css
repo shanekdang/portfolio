@@ -521,7 +521,9 @@ button.btn:hover {
 }
 
 #cursor {
-  animation: blink 1s step-end infinite;
+    color: #000;
+    font-size: 30px;
+    animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
