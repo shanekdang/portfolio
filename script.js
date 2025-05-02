@@ -24,7 +24,7 @@ let charIndex = 0;
 
 function typeWriter() {
     if (charIndex <= texts[textIndex].length) {
-        textElements.innerHTML = texts[textIndex].substring(0, charIndex) + '<span class="blinking-cursor">|</span>';
+        textElements.innerHTML = texts[textIndex].substring(0, charIndex);
         charIndex++;
         setTimeout(typeWriter, speed);
     } else {
@@ -35,7 +35,7 @@ function typeWriter() {
 function eraseText() {
     if (charIndex > 0) {
         charIndex--;
-        textElements.innerHTML = texts[textIndex].substring(0, charIndex) + '<span class="blinking-cursor">|</span>';
+        textElements.innerHTML = texts[textIndex].substring(0, charIndex);
         setTimeout(eraseText, 50);
     } else {
         textIndex = (textIndex + 1) % texts.length;
