@@ -45,7 +45,4 @@ function eraseText() {
 
 window.onload = typeWriter;
 
-
-window.onload = typeWriter
-
 document.querySelector('.typewriter-text').innerHTML += '<span class="blinking-cursor">|</span>';
