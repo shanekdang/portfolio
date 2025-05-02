@@ -24,24 +24,24 @@ let charcterIndex = 0;
 
 function typeWriter(){
     if (charcterIndex < texts[textIndex].length){
-        textElements.innerHTML += texts[textIndex].charAt(charcterIndex);
+        textElements.innerHTML = texts[textIndex].substring(0, charcterIndex) + '<span class="blinking-cursor">|</span>';
         charcterIndex++;
         setTimeout(typeWriter, speed); 
     }
     else{
-        setTimeout(eraseText, 1000)
+        setTimeout(eraseText, 1000);
     }
 }
 
 function eraseText(){
-    if(textElements.innerHTML.length > 0){
-        textElements.innerHTML = textElements.innerHTML.slice(0,-1);
-        setTimeout(eraseText, 50)
+    if(textElements.innerHTML.length > 1){ 
+        textElements.innerHTML = texts[textIndex].substring(0, textElements.innerHTML.length - 2) + '<span class="blinking-cursor">|</span>';
+        setTimeout(eraseText, 50);
     }
     else{
         textIndex = (textIndex + 1) % texts.length;
         charcterIndex = 0;
-        setTimeout(typeWriter, 500)
+        setTimeout(typeWriter, 500);
     }
 }
 
