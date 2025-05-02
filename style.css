@@ -519,3 +519,27 @@ button.btn:hover {
     color: #4acfee;
     border: 2px solid #4acfee;
 }
+
+.ul-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ul-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #4acfee;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #4acfee;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.ul-icons a:hover {
+    background: #4acfee;
+    color: #0e1217;
+    box-shadow: 0 0 10px #4acfee;
+}
