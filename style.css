@@ -520,7 +520,7 @@ button.btn:hover {
     border: 2px solid #4acfee;
 }
 
-#cursor {
+.cursor {
     border-left: 10px;
     animation: blink 0.7s infinite;
 }
