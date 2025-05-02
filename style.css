@@ -519,3 +519,8 @@ button.btn:hover {
     color: #4acfee;
     border: 2px solid #4acfee;
 }
+
+.typewriter label {
+    font-size: inherit; /* Ensures it matches the parent text */
+    font-weight: inherit; /* Optional: Matches the text weight */
+}
