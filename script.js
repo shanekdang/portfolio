@@ -14,37 +14,38 @@ const texts = [
     "DATA ANALYST",
     "PROGRAMMER",
     "SOFTWARE ENGINEER"
-]
+];
 
-let speed  =100;
+let speed = 100;
 const textElements = document.querySelector(".typewriter-text");
-
 let textIndex = 0;
-let charcterIndex = 0;
+let charIndex = 0;
 
-function typeWriter(){
-    if (charcterIndex < texts[textIndex].length){
-        textElements.innerHTML = texts[textIndex].substring(0, charcterIndex) + '<span class="blinking-cursor">|</span>';
-        charcterIndex++;
-        setTimeout(typeWriter, speed); 
-    }
-    else{
+function typeWriter() {
+    if (charIndex < texts[textIndex].length) {
+        textElements.innerHTML = texts[textIndex].substring(0, charIndex) + '<span class="blinking-cursor">|</span>';
+        charIndex++;
+        setTimeout(typeWriter, speed);
+    } else {
         setTimeout(eraseText, 1000);
     }
 }
 
-function eraseText(){
-    if(textElements.innerHTML.length > 1){ 
-        textElements.innerHTML = texts[textIndex].substring(0, textElements.innerHTML.length - 2) + '<span class="blinking-cursor">|</span>';
+function eraseText() {
+    if (charIndex > 0) {
+        charIndex--;
+        textElements.innerHTML = texts[textIndex].substring(0, charIndex) + '<span class="blinking-cursor">|</span>';
         setTimeout(eraseText, 50);
-    }
-    else{
+    } else {
         textIndex = (textIndex + 1) % texts.length;
-        charcterIndex = 0;
+        charIndex = 0;
         setTimeout(typeWriter, 500);
     }
 }
 
-document.querySelector('.typewriter-text').innerHTML += '<span class="blinking-cursor">|</span>';
+window.onload = typeWriter;
+
 
 window.onload = typeWriter
+
+document.querySelector('.typewriter-text').innerHTML += '<span class="blinking-cursor">|</span>';
