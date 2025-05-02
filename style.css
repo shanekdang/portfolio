@@ -521,6 +521,5 @@ button.btn:hover {
 }
 
 .typewriter label {
-    font-size: inherit; /* Ensures it matches the parent text */
-    font-weight: inherit; /* Optional: Matches the text weight */
+    font-size: 100px;
 }
