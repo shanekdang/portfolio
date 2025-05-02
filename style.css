@@ -521,7 +521,7 @@ button.btn:hover {
 }
 
 #cursor {
-    font-size: 30px;
+    border-left: 10px;
     animation: blink 0.7s infinite;
 }
 
