@@ -23,7 +23,7 @@ let textIndex = 0;
 let charIndex = 0;
 
 function typeWriter() {
-    if (charIndex < texts[textIndex].length) {
+    if (charIndex <= texts[textIndex].length) { // Change '<' to '<='
         textElements.innerHTML = texts[textIndex].substring(0, charIndex);
         charIndex++;
         setTimeout(typeWriter, speed);
